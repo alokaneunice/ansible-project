@@ -1,0 +1,17 @@
+- hosts: all
+  become: true
+  vars:
+   appname: nginx
+   appstate: absent
+   servicestate: stopped
+
+  tasks:
+  - name: installing "{{appname}}" software
+    apt:
+      name: "{{appname}}"
+      state: "{{appstate}}"
+
+  - name: start "{{appname}}" service
+    service:
+      name: "{{appname}}"
+      state: "{{servicestate}}"

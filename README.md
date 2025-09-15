@@ -31,4 +31,13 @@ Ansible is an open source, command-line IT automation software application writt
 - on your ansible controller create vi startnginx.yaml
 - paste the content inside the ansible playbook <startnginx.yaml> inside the vi startnginx.yaml and save
 - run the ansible playbook using
-      ansible-playbook -i inventory startnginx.yaml     
+      ansible-playbook -i inventory startnginx.yaml  
+
+- to purge your machine before running another apt
+      sudo apt purge nginx <or any other apt>  
+- to create a tree on the controller
+     sudo apt install tree
+- to check the tree out
+      tree apache_role
+- to create galaxy roles in the ansible controller
+     ansible-galaxy init apache_role

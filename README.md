@@ -33,7 +33,7 @@ Ansible is an open source, command-line IT automation software application writt
 - run the ansible playbook using
       ansible-playbook -i inventory startnginx.yaml  
 
-- to purge your machine before running another apt
+- to purge your machine before running another apt package
       sudo apt purge nginx <or any other apt>  
 - to create a tree on the controller
      sudo apt install tree
